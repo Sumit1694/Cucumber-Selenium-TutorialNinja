@@ -139,10 +139,22 @@ Screenshots for failures
 Execution time and summary
 
 ### Sample Test Execution Screenshots
-
+Test Cases Execution:
 ![Extent Report](Reports/Screenshots/TestExecutionExtentReport1.png)
+Test Cases steps Failed:
+![Extent Report](Reports/Screenshots/TestExecutionExtentReport2.png)
+Test Cases Category - tags:
+![Extent Report](Reports/Screenshots/TestExecutionExtentReport3.png)
+Test Cases Logs :
+![Extent Report](Reports/Screenshots/TestExecutionExtentReport4.png)
 
-
+Sample PDF TestExecution report:
+![Extent Report](Reports/Screenshots/TestExecutionExtentPDFReport1.png)
+![Extent Report](Reports/Screenshots/TestExecutionExtentPDFReport2.png)
+![Extent Report](Reports/Screenshots/TestExecutionExtentPDFReport3.png)
+![Extent Report](Reports/Screenshots/TestExecutionExtentPDFReport4.png)
+![Extent Report](Reports/Screenshots/TestExecutionExtentPDFReport5.png)
+![Extent Report](Reports/Screenshots/TestExecutionExtentPDFReport6.png)
 
 ### QA Documentation
 
