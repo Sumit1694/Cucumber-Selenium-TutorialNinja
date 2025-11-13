@@ -138,6 +138,9 @@ Step logs (Given/When/Then)
 Screenshots for failures
 Execution time and summary
 
+### Sample Test Execution Screenshots
+![Extent Report](reports/Screenshots/TestExecutionExtentReport1.png)
+
 ### QA Documentation
 
 All testing documentation related to the project is included under the `/documents` folder:
