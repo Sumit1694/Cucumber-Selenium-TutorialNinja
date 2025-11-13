@@ -140,7 +140,8 @@ Execution time and summary
 
 ### Sample Test Execution Screenshots
 
-![Extent Report](https://github.com/Sumit1694/Cucumber-Selenium-TutorialNinja/blob/master/reports/Screenshots/TestExecutionExtentReport1.png?raw=true)
+![Extent Report](https://github.com/Sumit1694/Cucumber-Selenium-TutorialNinja/blob/master/test-output/screenshots/TestExecutionExtentReport1.png?raw=true)
+
 
 
 
