@@ -1,0 +1,11 @@
+file:src/test/java/features/AddressBook.feature:48
+file:src/test/java/features/AffiliateFunctionality.feature:42:60
+file:src/test/java/features/ContactUsFunctionality.feature:27:55
+file:src/test/java/features/GiftCeritficate.feature:19
+file:src/test/java/features/MyAccount-AccountInformation.feature:78
+file:src/test/java/features/OrderHistory.feature:115
+file:src/test/java/features/ProductCompare.feature:72
+file:src/test/java/features/ProductDisplay.feature:60
+file:src/test/java/features/RegisterAccount.feature:139:167
+file:src/test/java/features/ShoppingCartFuncationality.feature:75
+file:src/test/java/features/WishList.feature:215

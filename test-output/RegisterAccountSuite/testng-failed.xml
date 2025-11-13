@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [RegisterAccountSuite]">
+  <test thread-count="3" name="CrossBrowser Tests - Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="runners.CrossBrowserTestingesTestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- runners.CrossBrowserTestingesTestRunner -->
+    </classes>
+  </test> <!-- CrossBrowser Tests - Firefox(failed) -->
+</suite> <!-- Failed suite [RegisterAccountSuite] -->

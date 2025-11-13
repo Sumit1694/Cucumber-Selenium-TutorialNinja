@@ -1,0 +1,2683 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 9, 2025 11:42:53 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@TC_SC_008</a><a class="dropdown-item" href="#">@TC_SC_025</a><a class="dropdown-item" href="#">@TC_SC_003</a><a class="dropdown-item" href="#">@TC_SC_023</a><a class="dropdown-item" href="#">@TC_SC_011</a><a class="dropdown-item" href="#">@TC_SC_032</a><a class="dropdown-item" href="#">@TC_SC_001</a><a class="dropdown-item" href="#">@TC_SC_015</a><a class="dropdown-item" href="#">@TC_SC_005</a><a class="dropdown-item" href="#">@TC_SC_002</a><a class="dropdown-item" href="#">@TC_SC_004</a><a class="dropdown-item" href="#">@ShoppingCart</a><a class="dropdown-item" href="#">@TC_SC_017</a><a class="dropdown-item" href="#">@TC_SC_010</a><a class="dropdown-item" href="#">@TC_SC_013</a><a class="dropdown-item" href="#">@TC_SC_007</a><a class="dropdown-item" href="#">@TC_SC_031</a><a class="dropdown-item" href="#">@TC_SC_014</a><a class="dropdown-item" href="#">@TC_SC_006</a><a class="dropdown-item" href="#">@TC_SC_016</a><a class="dropdown-item" href="#">@TC_SC_012</a><a class="dropdown-item" href="#">@TC_SC_009</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate Shopping cart functionality</p>
+            <p class="text-sm">
+              <span>11:42:54 pm</span> / <span>00:02:07:779</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Validate Shopping cart functionality</h5>
+<span class='badge badge-success'>11.09.2025 11:42:54 pm</span>
+<span class='badge badge-danger'>11.09.2025 11:45:02 pm</span>
+<span class='badge badge-default'>00:02:07:779</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Add single product to cart from product listing</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iPhone" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_searched_product()">
+                <span>And User click on add to cart button for searched product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added iPhone to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_displayed_success_message_in_search_page()">
+                <span>When User click on shopping cart link in displayed success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_product_is_added_in_shopping_cart()">
+                <span>Then User can see product is added in shopping cart</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>Add product to cart from product detail page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "MacBook" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_product_name_displayed_in_search_result()">
+                <span>And User click on product name displayed in search result</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_must_see_product_title_and_price_of_the_searched_product()">
+                <span>Then User must see product title and price of the searched product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.user_click_on_add_to_cart_button_for_searched_product_product_display_page()">
+                <span>And User click on add to cart button for searched product product display page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added MacBook to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_displayed_success_message_in_search_page()">
+                <span>When User click on shopping cart link in displayed success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_product_is_added_in_shopping_cart()">
+                <span>Then User can see product is added in shopping cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_correct_price_for_this_product()">
+                <span>And User can see correct price for this product</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>Add product without login</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "samsung galaxy" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_samsung_galaxy_product_in_search_page()">
+                <span>And User click on add to cart button for samsung galaxy product in search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added Samsung Galaxy Tab 10.1 to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_displayed_success_message_in_search_page()">
+                <span>When User click on shopping cart link in displayed success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_product_is_added_in_shopping_cart()">
+                <span>Then User can see product is added in shopping cart</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>Add multiple products to cart</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.MyAccountPageStepDefinitions.user_creates_new_account_and_landed_on_my_account_page()">
+                <span>When User creates new account and landed on my Account page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_search_for_three_product_i_phone_mac_book_samsung_galaxy_and_adding_to_cart_and_verifying_success_message()">
+                <span>And User search for three product iPhone, MacBook, samsung galaxy and adding to cart and verifying success message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_displayed_success_message_in_search_page()">
+                <span>When User click on shopping cart link in displayed success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_all_three_products_are_listed_in_shopping_cart_with_quantity_one_each()">
+                <span>Then User can see all three products are listed in shopping cart with quantity one each</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Add same product multiple times</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iPhone" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_i_phone_product_in_search_page()">
+                <span>And User click on add to cart button for iPhone product in search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_clear_search_field_existing_text()">
+                <span>And User clear search field existing text</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iPhone" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_i_phone_product_in_search_page()">
+                <span>And User click on add to cart button for iPhone product in search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_only_single_product_is_added_in_cart_with_quantity_two()">
+                <span>Then User can see only single product is added in cart with quantity two</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Add product with quantity from product page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "MacBook" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_product_name_displayed_in_search_result()">
+                <span>And User click on product name displayed in search result</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.user_increased_quantity_of_mac_book_to_in_product_display_page(java.lang.String)">
+                <span>And User increased quantity of MacBook to "3" in product display page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_click_on_add_to_cart_button_for_MacBook_product_in_Product_display_page()">
+                <span>And User click on add to cart button for MacBook product in product display page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_only_single_product_is_added_in_cart_with_quantity_three()">
+                <span>Then User can see only single product is added in cart with quantity three</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="114"><span class="badge log fail-bg mr-2">Fail</span>Verify Out of Stock product cannot be added</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iMac" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_product_name_displayed_in_search_result()">
+                <span>And User click on product name displayed in search result</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_availability_as_out_of_stock_then_user_cannot_add_product_product_to_cart_or_error_message_should_be_displayed()">
+                <span>Then User can see availability as out of stock then user cannot add product product to cart or error message should be displayed!</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: AddToCart behaviour is not correct! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.ShoppingCartStepDefinitions.user_can_see_availability_as_out_of_stock_then_user_cannot_add_product_product_to_cart_or_error_message_should_be_displayed(ShoppingCartStepDefinitions.java:116)
+	at ✽.User can see availability as out of stock then user cannot add product product to cart or error message should be displayed!(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ShoppingCartFuncationality.feature:81)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Verify Out of Stock product cannot be added
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded1.png' src="./screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>Verify cart displays correct product details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iPhone" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_searched_product()">
+                <span>And User click on add to cart button for searched product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_must_see_proper_image_visible_product_name_link_unit_price_quantity_field_line_total()">
+                <span>Then User must see proper image visible, product name link, unit price, quantity field, line total.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_must_see_currency_symbol_as_well()">
+                <span>And User must see currency symbol as well</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="144"><span class="badge log pass-bg mr-2">Pass</span>Verify product total calculation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "MacBook" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_product_name_displayed_in_search_result()">
+                <span>And User click on product name displayed in search result</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.user_increased_quantity_of_mac_book_to_in_product_display_page(java.lang.String)">
+                <span>And User increased quantity of MacBook to "3" in product display page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_click_on_add_to_cart_button_for_MacBook_product_in_Product_display_page()">
+                <span>And User click on add to cart button for MacBook product in product display page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_2x_price_of_mac_book_product()">
+                <span>Then User can see 3x price of MacBook product</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="163"><span class="badge log pass-bg mr-2">Pass</span>Verify grand total calculation with multiple products</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iPhone" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_searched_product()">
+                <span>And User click on add to cart button for searched product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_clear_search_field_existing_text()">
+                <span>And User clear search field existing text</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iMac" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_searched_product()">
+                <span>And User click on add to cart button for searched product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added iMac to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_correct_sub_total_price_of_products_added_in_shopping_cart()">
+                <span>Then User can see correct Grand Total price of products added in shopping cart</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="188"><span class="badge log pass-bg mr-2">Pass</span>Verify update quantity in cart</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iMac" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_searched_product()">
+                <span>And User click on add to cart button for searched product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added iMac to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_update_quantity_from_to_from_quantity_text_box(java.lang.Integer,java.lang.Integer)">
+                <span>And User update quantity from 1 to 5 from quantity text box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_click_on_update_button()">
+                <span>And User click on update button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.success_message_with_text_should_be_displayed_in_shopping_cart_page(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have modified your shopping cart!' should be displayed in shopping cart page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_recalculated_price_according_to_quantity_updated()">
+                <span>And User can see recalculated price according to quantity updated</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="211"><span class="badge log pass-bg mr-2">Pass</span>Verify Update quantity to zero</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iMac" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_searched_product()">
+                <span>And User click on add to cart button for searched product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added iMac to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_update_quantity_from_to_from_quantity_text_box(java.lang.Integer,java.lang.Integer)">
+                <span>And User update quantity from 1 to 0 from quantity text box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_click_on_update_button()">
+                <span>And User click on update button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_message(java.lang.String)">
+                <span>Then User can see "Your shopping cart is empty!" message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="232"><span class="badge log pass-bg mr-2">Pass</span>Verify Update with invalid characters</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iMac" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_searched_product()">
+                <span>And User click on add to cart button for searched product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added iMac to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_update_quantity_from_to_from_quantity_text_box(java.lang.Integer,java.lang.String)">
+                <span>And User update quantity from 1 to "abc" from quantity text box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_click_on_update_button()">
+                <span>And User click on update button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_message(java.lang.String)">
+                <span>Then User can see "Your shopping cart is empty!" message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="253"><span class="badge log pass-bg mr-2">Pass</span>Verify Remove a product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iMac" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_searched_product()">
+                <span>And User click on add to cart button for searched product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added iMac to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_remove_product_from_cart()">
+                <span>And User remove product from cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_message(java.lang.String)">
+                <span>Then User can see "Your shopping cart is empty!" message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="272"><span class="badge log pass-bg mr-2">Pass</span>Verify Remove a product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iPhone" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_i_phone_product_in_search_page()">
+                <span>And User click on add to cart button for iPhone product in search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added iPhone to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_clear_search_field_existing_text()">
+                <span>And User clear search field existing text</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "MacBook" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_mac_book_product_in_search_page()">
+                <span>And User click on add to cart button for MacBook product in search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added MacBook to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_removes_all_listed_products_in_shopping_cart()">
+                <span>And User removes all listed products in shopping cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_message(java.lang.String)">
+                <span>Then User can see "Your shopping cart is empty!" message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="301"><span class="badge log pass-bg mr-2">Pass</span>Verify empty cart message</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_click_on_shopping_cart_header_link()">
+                <span>When User click on shopping cart header link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_message(java.lang.String)">
+                <span>Then User can see "Your shopping cart is empty!" message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="310"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation to product page from cart</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iPhone" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_i_phone_product_in_search_page()">
+                <span>And User click on add to cart button for iPhone product in search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.success_message_with_text_should_be_displayed(java.lang.String)">
+                <span>Then Success message with text - 'Success: You have added iPhone to your shopping cart!' should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_click_on_product_name_link_in_shopping_cart()">
+                <span>And User click on product name link in shopping cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.verify_navigation_to_the_product_detail_page_and_product_name_matches()">
+                <span>Then Verify navigation to the product detail page and product name matches.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="329"><span class="badge log pass-bg mr-2">Pass</span>Verify cart persistence after logout/login</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_my_account_drop_menu()">
+                <span>When User clicks on My Account Drop menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_selects_login_option()">
+                <span>And User Selects Login option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageStepDefinitions.user_enters_valid_email_address_into_email_field(java.lang.String)">
+                <span>And User enters valid email address "abcvda21@gmail.com" into email field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageStepDefinitions.user_enters_valid_password_into_password_field(java.lang.String)">
+                <span>And User enters valid password "abcvda21@gmail" into password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageStepDefinitions.user_clicks_on_login_button()">
+                <span>And User clicks on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "iPhone" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_add_to_cart_button_for_i_phone_product_in_search_page()">
+                <span>And User click on add to cart button for iPhone product in search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.MyAccountPageStepDefinitions.user_clicks_on_my_account_drop_menu_on_my_account_page()">
+                <span>When User clicks on My Account Drop menu on MyAccountPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.MyAccountPageStepDefinitions.user_clicks_on_logout_option()">
+                <span>And User clicks on logout option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_my_account_drop_menu()">
+                <span>When User clicks on My Account Drop menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_selects_login_option()">
+                <span>And User Selects Login option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageStepDefinitions.user_enters_valid_email_address_into_email_field(java.lang.String)">
+                <span>And User enters valid email address "abcvda21@gmail.com" into email field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageStepDefinitions.user_enters_valid_password_into_password_field(java.lang.String)">
+                <span>And User enters valid password "abcvda21@gmail" into password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageStepDefinitions.user_clicks_on_login_button()">
+                <span>And User clicks on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_header_link_after_logged_in()">
+                <span>And User click on shopping cart header link after loggedIn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_product_is_added_in_shopping_cart()">
+                <span>Then User can see product is added in shopping cart</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="368"><span class="badge log pass-bg mr-2">Pass</span>Verify cart persistence after logout/login</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_my_account_drop_menu()">
+                <span>When User clicks on My Account Drop menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_selects_register_option()">
+                <span>And User Selects Register option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegisterPageStepDefinitions.user_enters_mandatory_registration_details_into_fields()">
+                <span>And User enters mandatory registration details into fields</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegisterPageStepDefinitions.user_clicks_on_continue_button_on_register_account_page()">
+                <span>And User clicks on continue button on register account page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_click_on_shopping_cart_header_link()">
+                <span>And User click on shopping cart header link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_message(java.lang.String)">
+                <span>Then User can see "Your shopping cart is empty!" message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="385"><span class="badge log pass-bg mr-2">Pass</span>Verify adding large quantity</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "MacBook" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_product_name_displayed_in_search_result()">
+                <span>And User click on product name displayed in search result</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.user_increase_quantity_for_mac_book_to_one_thousand()">
+                <span>And User increase quantity for MacBook to one thousand</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_click_on_add_to_cart_button_for_MacBook_product_in_Product_display_page()">
+                <span>And User click on add to cart button for MacBook product in product display page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_high_quantity_is_getting_accepted()">
+                <span>Then User can see high quantity is getting accepted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="404"><span class="badge log pass-bg mr-2">Pass</span>Verify adding large quantity</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_the_tutorials_ninja_home_page()">
+                <span>Given User is on the TutorialsNinja home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_enters_any_existing_product_name_into_the_search_text_box_field(java.lang.String)">
+                <span>When User enters any existing product name "MacBook" into the search text box field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_button_having_search_icon()">
+                <span>And User clicks on button having search icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_product_name_displayed_in_search_result()">
+                <span>And User click on product name displayed in search result</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ProductDisplayPageStepDefinitions.user_increase_quantity_for_mac_book_to_one_thousand()">
+                <span>And User increase quantity for MacBook to one thousand</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_click_on_add_to_cart_button_for_MacBook_product_in_Product_display_page()">
+                <span>And User click on add to cart button for MacBook product in product display page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SearchPageStepDefinitions.user_click_on_shopping_cart_link_in_present_in_success_message_in_search_page()">
+                <span>When User click on shopping cart link in present in success message in searchPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ShoppingCartStepDefinitions.user_can_see_high_quantity_is_getting_accepted()">
+                <span>Then User can see high quantity is getting accepted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:43:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='124'>Then User can see availability as out of stock then user cannot add product product to cart or error message should be displayed!</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Out of Stock product cannot be added.Then User can see availability as out of stock then user cannot add product product to cart or error message should be displayed!</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">22</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_008</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_008</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='127'>Verify cart displays correct product details</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify cart displays correct product details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_025</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_025</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='368'>Verify cart persistence after logout/login</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify cart persistence after logout/login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_003</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_003</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='42'>Add product without login</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add product without login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_023</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_023</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='329'>Verify cart persistence after logout/login</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify cart persistence after logout/login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_011</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_011</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='188'>Verify update quantity in cart</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify update quantity in cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_032</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_032</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='404'>Verify adding large quantity</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify adding large quantity</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_001</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:42:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Add single product to cart from product listing</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add single product to cart from product listing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_015</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_015</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='272'>Verify Remove a product</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Remove a product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_005</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_005</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>Add same product multiple times</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add same product multiple times</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_002</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_002</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:42:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>Add product to cart from product detail page</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add product to cart from product detail page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_004</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_004</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>Add multiple products to cart</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add multiple products to cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>20</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@ShoppingCart</p>
+<p class="duration text-sm">21 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ShoppingCart</h4>
+<span status="pass" class='badge log pass-bg'>20 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:42:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Add single product to cart from product listing</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add single product to cart from product listing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:42:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>Add product to cart from product detail page</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add product to cart from product detail page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='42'>Add product without login</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add product without login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>Add multiple products to cart</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add multiple products to cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>Add same product multiple times</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add same product multiple times</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='95'>Add product with quantity from product page</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add product with quantity from product page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:43:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='114'>Verify Out of Stock product cannot be added</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Out of Stock product cannot be added</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='127'>Verify cart displays correct product details</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify cart displays correct product details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='144'>Verify product total calculation</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify product total calculation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='163'>Verify grand total calculation with multiple products</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify grand total calculation with multiple products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='188'>Verify update quantity in cart</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify update quantity in cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='211'>Verify Update quantity to zero</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Update quantity to zero</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='232'>Verify Update with invalid characters</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Update with invalid characters</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='253'>Verify Remove a product</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Remove a product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='272'>Verify Remove a product</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Remove a product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='301'>Verify empty cart message</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify empty cart message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='310'>Verify navigation to product page from cart</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify navigation to product page from cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='329'>Verify cart persistence after logout/login</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify cart persistence after logout/login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='368'>Verify cart persistence after logout/login</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify cart persistence after logout/login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='385'>Verify adding large quantity</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify adding large quantity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='404'>Verify adding large quantity</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify adding large quantity</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_017</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_017</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='310'>Verify navigation to product page from cart</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify navigation to product page from cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_010</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_010</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='163'>Verify grand total calculation with multiple products</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify grand total calculation with multiple products</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_013</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_013</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='232'>Verify Update with invalid characters</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Update with invalid characters</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC_SC_007</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_007</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:43:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='114'>Verify Out of Stock product cannot be added</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Out of Stock product cannot be added</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_031</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_031</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='385'>Verify adding large quantity</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify adding large quantity</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_014</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_014</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='253'>Verify Remove a product</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Remove a product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_006</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_006</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='95'>Add product with quantity from product page</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Add product with quantity from product page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_016</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_016</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:44:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='301'>Verify empty cart message</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify empty cart message</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_012</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_012</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='211'>Verify Update quantity to zero</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify Update quantity to zero</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_SC_009</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_SC_009</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:43:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='144'>Verify product total calculation</a>
+<div class="">
+<span class="badge badge-default">Validate Shopping cart functionality.Verify product total calculation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 9, 2025 11:42:53 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 9, 2025 11:45:02 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>20</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='4%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='99%'><b>179</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Validate Shopping cart functionality":127.779
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@TC_SC_008</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_025</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_003</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_023</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_011</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_032</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_001</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_015</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_005</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_002</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_004</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ShoppingCart</td>
+<td>20</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>95.238%</td>
+</tr>
+<tr>
+<td>@TC_SC_017</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_010</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_013</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_007</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC_SC_031</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_014</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_006</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_016</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_012</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_SC_009</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Author</td>
+<td>Sumit Rane</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>BDD Selenium TestNG Framework</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Chrome</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 20,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 179,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

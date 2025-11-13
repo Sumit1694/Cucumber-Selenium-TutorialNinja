@@ -1,0 +1,22 @@
+# Java
+*.class          → ignores all compiled .class files
+*.log            → ignores log files
+target/          → ignores Maven build output folder
+
+# Maven
+.settings/       → ignores Eclipse Maven settings
+.mvn/            → ignores Maven wrapper folder (except the jar below)
+!.mvn/wrapper/maven-wrapper.jar  → keeps the wrapper jar (important for others to build your project easily)
+
+# IntelliJ
+/.idea           → ignores IntelliJ project settings
+*.iml            → ignores IntelliJ module files
+
+# Logs and reports
+reports/         → ignores your HTML or custom test reports
+extent-reports/  → ignores ExtentReports folder
+screenshots/     → ignores test screenshots
+
+# OS
+.DS_Store        → ignores macOS metadata files
+Thumbs.db        → ignores Windows thumbnail cache

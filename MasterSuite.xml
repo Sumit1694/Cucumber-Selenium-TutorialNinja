@@ -1,0 +1,32 @@
+<suite name="RegisterAccountSuite" thread-count="3">
+
+    <!-- Functional tests -->
+    <test name="Functional Tests">
+        <classes>
+            <class name="runners.TestNGRTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- Cross-browser tests -->
+    <test name="CrossBrowser Tests - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runners.CrossBrowserTestingesTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="CrossBrowser Tests - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="runners.CrossBrowserTestingesTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="CrossBrowser Tests - Edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="runners.CrossBrowserTestingesTestRunner"/>
+        </classes>
+    </test>
+
+</suite>

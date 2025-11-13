@@ -1,0 +1,1908 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>293/14/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 12 23:19:49 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>3765 seconds (3765639 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate submitting the Contact Form in Contact Us page by providing all the details after login", "validate contactUs functionality"</td>
+<td><div><pre>java.lang.AssertionError: success message is not displayed for contact us form! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.ContactUsPageStepDefinitions.user_must_see_success_message_with_text_your_enquiry_has_been_submitted_should_be_displayed(ContactUsPageStepDefinitions.java:50)
+	at ✽.User must see success Message with text Your Enquiry has been Submitted should be displayed(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ContactUsFunctionality.feature:64)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1910718752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1910718752'><pre>java.lang.AssertionError: success message is not displayed for contact us form! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.ContactUsPageStepDefinitions.user_must_see_success_message_with_text_your_enquiry_has_been_submitted_should_be_displayed(ContactUsPageStepDefinitions.java:50)
+	at ✽.User must see success Message with text Your Enquiry has been Submitted should be displayed(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ContactUsFunctionality.feature:64)
+</pre></div></td>
+<td>26</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product for comparision from Featured section on Home Page", "Validate Product Compare Functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[normalize-space()=&apos;Product Comparison&apos;]&quot;}
+  (Session info: chrome=142.0.7444.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16b4c21a6bd1651242ac9cf338a70541, findElement {value=//h1[normalize-space()=&apos;Product Comparison&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.61, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\Sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54808}, goog:processID: 20860, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54808/devtoo..., se:cdpVersion: 142.0.7444.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16b4c21a6bd1651242ac9cf338a70541
+	at jdk.internal.reflect.GeneratedConstructorAccessor55.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.getText(Unknown Source)
+	at pageObjects.ProductComparisonPage.getProductComparisonPageHeading(ProductComparisonPage.java:223)
+	at stepDefinitions.ProductComparisonStepDefinitions.user_should_be_taken_to_the_page_with_the_details_of_the_product_that_we_have_added_for_comparision(ProductComparisonStepDefinitions.java:34)
+	at ✽.User should be taken to the &quot;Product Comparison&quot; page with the details of the Product that we have added for comparision(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ProductCompare.feature:80)
+</pre></div><a href='#' onClick='toggleBox("stack-trace46271329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace46271329'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[normalize-space()=&apos;Product Comparison&apos;]&quot;}
+  (Session info: chrome=142.0.7444.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16b4c21a6bd1651242ac9cf338a70541, findElement {value=//h1[normalize-space()=&apos;Product Comparison&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.61, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\Sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54808}, goog:processID: 20860, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54808/devtoo..., se:cdpVersion: 142.0.7444.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16b4c21a6bd1651242ac9cf338a70541
+	at jdk.internal.reflect.GeneratedConstructorAccessor55.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.getText(Unknown Source)
+	at pageObjects.ProductComparisonPage.getProductComparisonPageHeading(ProductComparisonPage.java:223)
+	at stepDefinitions.ProductComparisonStepDefinitions.user_should_be_taken_to_the_page_with_the_details_of_the_product_that_we_have_added_for_comparision(ProductComparisonStepDefinitions.java:34)
+	at ✽.User should be taken to the &quot;Product Comparison&quot; page with the details of the Product that we have added for comparision(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ProductCompare.feature:80)
+</pre></div></td>
+<td>15</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether the Mandatory field in Register account page are acceptiong only spaces", "Validate Register Account functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Telephone must be between 3 and 32 characters!&apos;)]&quot;}
+  (Session info: chrome=142.0.7444.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb6bfaa79d218939b801d0a4068ddd69, findElement {value=//div[contains(text(),&apos;Telephone must be between 3 and 32 characters!&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.61, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\Sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56078}, goog:processID: 11312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56078/devtoo..., se:cdpVersion: 142.0.7444.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb6bfaa79d218939b801d0a4068ddd69
+	at jdk.internal.reflect.GeneratedConstructorAccessor55.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.getText(Unknown Source)
+	at pageObjects.RegisterPage.getTelephoneWarningMessage(RegisterPage.java:460)
+	at stepDefinitions.RegisterPageStepDefinitions.user_should_get_warning_message_for_these_mandatory_fields(RegisterPageStepDefinitions.java:233)
+	at ✽.User should get warning message for these Mandatory fields for spaces(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/RegisterAccount.feature:146)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1524227165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1524227165'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Telephone must be between 3 and 32 characters!&apos;)]&quot;}
+  (Session info: chrome=142.0.7444.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb6bfaa79d218939b801d0a4068ddd69, findElement {value=//div[contains(text(),&apos;Telephone must be between 3 and 32 characters!&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.61, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\Sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56078}, goog:processID: 11312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56078/devtoo..., se:cdpVersion: 142.0.7444.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb6bfaa79d218939b801d0a4068ddd69
+	at jdk.internal.reflect.GeneratedConstructorAccessor55.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.getText(Unknown Source)
+	at pageObjects.RegisterPage.getTelephoneWarningMessage(RegisterPage.java:460)
+	at stepDefinitions.RegisterPageStepDefinitions.user_should_get_warning_message_for_these_mandatory_fields(RegisterPageStepDefinitions.java:233)
+	at ✽.User should get warning message for these Mandatory fields for spaces(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/RegisterAccount.feature:146)
+</pre></div></td>
+<td>17</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate postcode field with invalid input", "verify address book functionality"</td>
+<td><div><pre>java.lang.AssertionError: Expected postcode validation message was not displayed. Application allowed invalid postcode! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.AddressBookStepDefinitions.user_should_see_correct_error_message_of_invalid_postcode_field(AddressBookStepDefinitions.java:88)
+	at ✽.User should see correct error message of invalid postcode field(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/AddressBook.feature:56)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1040916227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1040916227'><pre>java.lang.AssertionError: Expected postcode validation message was not displayed. Application allowed invalid postcode! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.AddressBookStepDefinitions.user_should_see_correct_error_message_of_invalid_postcode_field(AddressBookStepDefinitions.java:88)
+	at ✽.User should see correct error message of invalid postcode field(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/AddressBook.feature:56)
+</pre></div></td>
+<td>20</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate presence of all UI elements on Order History page", "verify order history funcationality"</td>
+<td><div><pre>java.lang.AssertionError: Order history headers are not displayed as expected! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.OrderHistoryStepDefinitions.all_required_columns_and_headers_should_be_displayed_correctly(OrderHistoryStepDefinitions.java:33)
+	at ✽.All required columns and headers should be displayed correctly(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/OrderHistory.feature:124)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1604374731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1604374731'><pre>java.lang.AssertionError: Order history headers are not displayed as expected! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.OrderHistoryStepDefinitions.all_required_columns_and_headers_should_be_displayed_correctly(OrderHistoryStepDefinitions.java:33)
+	at ✽.All required columns and headers should be displayed correctly(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/OrderHistory.feature:124)
+</pre></div></td>
+<td>14</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Tax ID field does not accept special characters", "validate affiliate account functionality"</td>
+<td><div><pre>java.lang.AssertionError: Tax field is accepting special characters! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at pageObjects.AffiliateAccountPage.verifyTaxIdFieldDoesNotAcceptSpecialChars(AffiliateAccountPage.java:359)
+	at stepDefinitions.AffiliateAccountStepDefinitions.user_enters_special_characters_in_tax_field_and_fill_all_other_details(AffiliateAccountStepDefinitions.java:96)
+	at ✽.User enters special characters in Tax field and fill all other details(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/AffiliateFunctionality.feature:48)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1568785226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1568785226'><pre>java.lang.AssertionError: Tax field is accepting special characters! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at pageObjects.AffiliateAccountPage.verifyTaxIdFieldDoesNotAcceptSpecialChars(AffiliateAccountPage.java:359)
+	at stepDefinitions.AffiliateAccountStepDefinitions.user_enters_special_characters_in_tax_field_and_fill_all_other_details(AffiliateAccountStepDefinitions.java:96)
+	at ✽.User enters special characters in Tax field and fill all other details(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/AffiliateFunctionality.feature:48)
+</pre></div></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate submitting the Contact Form in Contact Us page by providing all the details", "validate contactUs functionality"</td>
+<td><div><pre>java.lang.AssertionError: User is not see success message for contact us form filled! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.ContactUsPageStepDefinitions.user_should_see_success_message_with_text_should_be_displayed(ContactUsPageStepDefinitions.java:90)
+	at ✽.User should see success message with text &apos;Your Enquiry has been Submitted!&apos; should be displayed(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ContactUsFunctionality.feature:33)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2035957239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2035957239'><pre>java.lang.AssertionError: User is not see success message for contact us form filled! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.ContactUsPageStepDefinitions.user_should_see_success_message_with_text_should_be_displayed(ContactUsPageStepDefinitions.java:90)
+	at ✽.User should see success message with text &apos;Your Enquiry has been Submitted!&apos; should be displayed(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ContactUsFunctionality.feature:33)
+</pre></div></td>
+<td>25</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Telephone field accepts only numeric values", "verify MyAccountInfo-Account information functionality"</td>
+<td><div><pre>java.lang.AssertionError: telephone field is not validating characters! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.EditYourInformationStepDefinitions.user_cannot_add_characters_in_telephone_field(EditYourInformationStepDefinitions.java:64)
+	at ✽.User cannot add characters in telephone field validates the correct behaviour(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/MyAccount-AccountInformation.feature:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace449518630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace449518630'><pre>java.lang.AssertionError: telephone field is not validating characters! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.EditYourInformationStepDefinitions.user_cannot_add_characters_in_telephone_field(EditYourInformationStepDefinitions.java:64)
+	at ✽.User cannot add characters in telephone field validates the correct behaviour(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/MyAccount-AccountInformation.feature:84)
+</pre></div></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add out-of-stock product from wish list", "Validate WishList functionality"</td>
+<td><div><pre>java.lang.AssertionError: addToCart button is enabled for outofStock product! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.myWishListPageStepDefinitions.add_to_cart_button_must_be_disabled_for_out_of_stock_product_on_my_wishlist_page(myWishListPageStepDefinitions.java:22)
+	at ✽.Add to cart button must be disabled for out of stock product on my wishlist page(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/WishList.feature:223)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2144320833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2144320833'><pre>java.lang.AssertionError: addToCart button is enabled for outofStock product! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.myWishListPageStepDefinitions.add_to_cart_button_must_be_disabled_for_out_of_stock_product_on_my_wishlist_page(myWishListPageStepDefinitions.java:22)
+	at ✽.Add to cart button must be disabled for out of stock product on my wishlist page(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/WishList.feature:223)
+</pre></div></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify default Theme selection", "validate Gift certificate functionality"</td>
+<td><div><pre>java.lang.AssertionError: first option is not selected by default! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.GiftCertificatePageStepDefinitions.user_should_see_a_default_theme_birthday_or_first_option_is_selected_by_default(GiftCertificatePageStepDefinitions.java:58)
+	at ✽.User should see a default theme Birthday or first option is selected by default(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/GiftCeritficate.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace451395752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace451395752'><pre>java.lang.AssertionError: first option is not selected by default! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.GiftCertificatePageStepDefinitions.user_should_see_a_default_theme_birthday_or_first_option_is_selected_by_default(GiftCertificatePageStepDefinitions.java:58)
+	at ✽.User should see a default theme Birthday or first option is selected by default(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/GiftCeritficate.feature:24)
+</pre></div></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify system behavior when Company Name exceeds 50 characters", "validate affiliate account functionality"</td>
+<td><div><pre>java.lang.AssertionError: Company name field accepted more than 50 characters unexpectedly! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.AffiliateAccountStepDefinitions.user_enters_company_name_of_more_than_characters_and_form_should_be_submitted_successfully(AffiliateAccountStepDefinitions.java:80)
+	at ✽.User enters company name of more than 50 characters and form should be submitted successfully(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/AffiliateFunctionality.feature:66)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1656107232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1656107232'><pre>java.lang.AssertionError: Company name field accepted more than 50 characters unexpectedly! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.AffiliateAccountStepDefinitions.user_enters_company_name_of_more_than_characters_and_form_should_be_submitted_successfully(AffiliateAccountStepDefinitions.java:80)
+	at ✽.User enters company name of more than 50 characters and form should be submitted successfully(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/AffiliateFunctionality.feature:66)
+</pre></div></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether the leading and trailing spaces entered into the Register Account fields are trimmed", "Validate Register Account functionality"</td>
+<td><div><pre>java.lang.AssertionError: FirstName field found spaces expected [    liZS    ] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at stepDefinitions.RegisterPageStepDefinitions.user_should_able_to_see_account_created_by_information_after_removing_leading_and_trailing_spaces(RegisterPageStepDefinitions.java:298)
+	at ✽.User should able to see account created by information after removing leading and trailing spaces(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/RegisterAccount.feature:178)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1813446316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1813446316'><pre>java.lang.AssertionError: FirstName field found spaces expected [    liZS    ] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at stepDefinitions.RegisterPageStepDefinitions.user_should_able_to_see_account_created_by_information_after_removing_leading_and_trailing_spaces(RegisterPageStepDefinitions.java:298)
+	at ✽.User should able to see account created by information after removing leading and trailing spaces(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/RegisterAccount.feature:178)
+</pre></div></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that negative, zero, or null quantity values should not be allowed on the Product Display Page", "Validate product display functionality"</td>
+<td><div><pre>java.lang.AssertionError: warning message is not displaying for negative values! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.ProductDisplayPageStepDefinitions.user_search_product_and_verify_by_adding_quantity_to_zero_negative_or_null_then_warning_message_should_be_displayed(ProductDisplayPageStepDefinitions.java:26)
+	at ✽.User search product and verify by adding quantity to zero, negative or null then warning message should be displayed(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ProductDisplay.feature:63)
+</pre></div><a href='#' onClick='toggleBox("stack-trace746615707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace746615707'><pre>java.lang.AssertionError: warning message is not displaying for negative values! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.ProductDisplayPageStepDefinitions.user_search_product_and_verify_by_adding_quantity_to_zero_negative_or_null_then_warning_message_should_be_displayed(ProductDisplayPageStepDefinitions.java:26)
+	at ✽.User search product and verify by adding quantity to zero, negative or null then warning message should be displayed(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ProductDisplay.feature:63)
+</pre></div></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Out of Stock product cannot be added", "Validate Shopping cart functionality"</td>
+<td><div><pre>java.lang.AssertionError: AddToCart behaviour is not correct! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.ShoppingCartStepDefinitions.user_can_see_availability_as_out_of_stock_then_user_cannot_add_product_product_to_cart_or_error_message_should_be_displayed(ShoppingCartStepDefinitions.java:116)
+	at ✽.User can see availability as out of stock then user cannot add product product to cart or error message should be displayed!(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ShoppingCartFuncationality.feature:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace450986108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace450986108'><pre>java.lang.AssertionError: AddToCart behaviour is not correct! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.ShoppingCartStepDefinitions.user_can_see_availability_as_out_of_stock_then_user_cannot_add_product_product_to_cart_or_error_message_should_be_displayed(ShoppingCartStepDefinitions.java:116)
+	at ✽.User can see availability as out of stock then user cannot add product product to cart or error message should be displayed!(file:///C:/Users/Sumit/eclipse-workspace/NewAccount02092025/cucumber-selenium-tutorialsninja/src/test/java/features/ShoppingCartFuncationality.feature:81)
+</pre></div></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to wish list from product details page", "Validate WishList functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the complete functionality of the Application by selecting Euro currency", "verify currency functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Product Comparison page when only two products are added to the page for comparison", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a new Account by not opting for Newsletter and check the Newsletter Subscription page", "validate newsLetter functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Breadcrumb, Page Heading, Page URL, Paage Title of Register Account page", "Validate Register Account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that Special Offers link is present in footer navigation", "validate Special offers functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation for invalid email address", "validate Gift certificate functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate mandatory field validations", "verify address book functionality"</td>
+<td></td>
+<td>20</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the copying of the text entered into Password field", "Validate login account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify cart persistence after logout/login", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Page Title, Page Heading and Page URL of the Product Display page", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Hero Images and its slider options in the Home page", "Validate HomePage functionality"</td>
+<td></td>
+<td>41</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify dropdown items under Desktops menu", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to Purchase Gift Certificate page", "validate Gift certificate functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user cannot register Affiliate account without accepting Terms & Conditions", "validate affiliate account functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Page Title, Page Heading and Page URL of the Product Comparison page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Breadcrumb of the Search page", "Validate Search Functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate logging into the application using inactive credintials", "Validate login account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the My Account page functionality in all the supported environments", "Validate My Account functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Reward Points displayed in the Product Display page", "Validate product display functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user can change payment method between Bank Transfer, PayPal, and Cheque", "validate affiliate account functionality"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate udpating the Subscribe option in the Newsletter Subscription page", "validate newsLetter functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that Product Name, Brand and Product Code are displayed in the Product Display Page", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Page Heading, Page Title and Page URL in the Change Password page", "verify change password functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Home Page from Shopping Cart page", "Validate HomePage functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify updating First Name with valid input", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate four featured products should be displayed in the Home Page", "Validate HomePage functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Newsletter Subscription page  functionality in all the supported environments", "validate newsLetter functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the availabilty status of the Product in the Product Display Page", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Cart icon visibility", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Breadcrumb that is displayed on the Product Compare page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify old vs new price", "validate Special offers functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with valid product name", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify empty wishlist message", "Validate WishList functionality"</td>
+<td></td>
+<td>28</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Page Heading, Page URL and Page Title of the Search page", "Validate Search Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Password text entered into Password field is toggled to hide its visiblity", "Validate Register Account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to the Product Display page by using the Product image in the Wish List page", "Validate product display functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Registering an account by providing the existing account details", "Validate Register Account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify wish list counter updates", "Validate WishList functionality"</td>
+<td></td>
+<td>19</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Newsletter Subscription page using Right Column options", "validate newsLetter functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product without login", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify dropdown items under Laptops & Notebooks menu", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Registering an Account with all mandatory details", "Validate Register Account functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login into the application using invalid email and valid password.", "Validate login account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Newsletter Subscription page from My Account page", "validate newsLetter functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Order History page", "verify order history funcationality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Change Password page using Password Right column option", "verify change password functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Back button in the Newsletter Subscription page", "validate newsLetter functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Change Password page functionality in all the supported environments", "verify change password functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to wish list from product listing page", "Validate WishList functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify gift certificate appears in shopping cart", "validate Gift certificate functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate we can use all the options of Search functionality using the Keybaord keys", "Validate Search Functionality"</td>
+<td></td>
+<td>15</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the success message which will be displayed after adding the Products for Comparison", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Logging out by selecting Logout option from My Account dropmenu", "Validate logout account functionality"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search textbox field and the button having search icon are displayed on all the page of the Application", "Validate Search Functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Login page functionality in all the supported environments", "Validate login account functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that invalid PayPal Email shows error message", "validate affiliate account functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate address length constraint", "verify address book functionality"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation to Address Book page", "verify address book functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify correct URL of My Account Information page", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate viewing order information from order history", "verify order history funcationality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify successful gift certificate creation", "validate Gift certificate functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the User can select how many produts can be displayed in the Search Results", "Validate Search Functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Price of the Product with and without tax is displayed in the Product Display Page", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify empty cart message", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate searching with an existing Product Name", "Validate Search Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the User is able to write a review for the Product from the Reviews tab of Product Display Page", "Validate product display functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to the Product Display page by using the Product Name link in the Wish List page", "Validate product display functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the default quanity for the Product is displayed as 1 in the Product Display Page, when there is no minimum quantity set for the Product", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate guest user can view offers without login", "validate Special offers functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Contact Us link navigation", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify validation when required field left blank", "validate Gift certificate functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate logging into the application using valid email and invalid password", "Validate login account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to other pages using the options or links provided on the Register Account page", "Validate Register Account functionality"</td>
+<td></td>
+<td>19</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Contact Us page  functionality in all the supported environments", "validate contactUs functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify existing user information is pre-filled", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all the fields in the Search functionality and Search page have placeholders", "Validate Search Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product for comparision from List View of Product Category or Sub Category page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to the Product Display page by using the Product Image in the Shopping Cart page", "Validate product display functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate List and Grid views when multiple Products are displayed in the search results", "Validate Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the complete functionality of the Application by selecting pounds currency", "verify currency functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate searching for a product after login to the Application", "Validate Search Functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  the working of Continue button on the Product Compare page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all the fields in the Review tab are mandatory fields", "Validate product display functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify cart persistence after logout/login", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate system prevents deleting default address", "verify address book functionality"</td>
+<td></td>
+<td>13</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that clicking continue on confirmation redirects user to My Account page", "validate affiliate account functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search using the text from the product description", "Validate Search Functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message format and color", "verify address book functionality"</td>
+<td></td>
+<td>15</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Product Comparison page when three products are added to the page for comparison", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Partner Carousel section and its slider options in the Home page", "Validate HomePage functionality"</td>
+<td></td>
+<td>24</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to the Product Display page by using the Product Name link in Success message on adding the Product to Cart", "Validate product display functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate navigating to the Product Display page by using the Product Name link in the cart button toggle box", "Validate product display functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add single product to cart from product listing", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to product page from cart", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify footer customer Service section links", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate searching without providing any Product Name", "Validate Search Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify only one default address is active", "verify address book functionality"</td>
+<td></td>
+<td>43</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Cart from Product Comparison Page", "Validate Add to Cart functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify minimum amount validation", "validate Gift certificate functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate related products section in product Display page", "Validate product display functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate expired offers are not displayed", "validate Special offers functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to My Account page using Right Column options", "Validate My Account functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Logging out by selecting Logout option from Right Column options", "Validate logout account functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Cart from Product Comparison Page", "Validate Add to Cart functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding a new address with valid details", "verify address book functionality"</td>
+<td></td>
+<td>20</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate entering invalid email address into the E-Mail Address field and submit the form", "validate contactUs functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Move product from wish list to cart", "Validate WishList functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Breadcrumb of Newsletter Subscription page", "validate newsLetter functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Cart from the Related Products section of the Product Display Page", "Validate Add to Cart functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that Affiliate Tracking link generates a valid tracking code", "validate affiliate account functionality"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate logging into the application using keyboard keys (Tab and Enter)", "Validate login account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether the required details and fields are displayed in the Contact Us page", "validate contactUs functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Product Display page functionality in all the supported environments", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate searching by providing a search criteria which results in mulitple products", "Validate Search Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Special Offers page loads successfully", "validate Special offers functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify product remains in wish list after add-to-cart", "Validate WishList functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple products to wish list", "Validate WishList functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Information section links in footer", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all the mandatory fields in the Register account page are marked with red color star symbol", "Validate Register Account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Order History page accessibility via My Account dropdown", "verify order history funcationality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Telephone field with empty input", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product for comparision from Product Display Page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the count of reviews should be displayed in the Reviews tab label of the Product Display page", "Validate product display functionality"</td>
+<td></td>
+<td>15</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate changing the password without entering anything into the fields in Change Password page", "verify change password functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to My Account page using My Account option in Site Map page", "Validate My Account functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to the Product Display page by using the Product Name link in the Shopping Cart page", "Validate product display functionality"</td>
+<td></td>
+<td>16</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the original price of the Product without offer in the Product Display page", "Validate product display functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the UI of the Register Account page", "Validate Register Account functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify presence of logo in the header", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Product Comparison page when four products are added to the page for comparison", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>14</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify presence of page heading", "verify address book functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Forgotten Password link is available in the Login page and is working", "Validate login account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Cart from Product Display Page", "Validate Add to Cart functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that past orders are listed correctly", "verify order history funcationality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search by selecting the category of product", "Validate Search Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that Company Name accepts up to 50 characters", "validate affiliate account functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation from Login link in My Account dropdown", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that clicking on an offer product opens its detail page", "validate Special offers functionality"</td>
+<td></td>
+<td>31</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate removing the Products from the 'Product Comparison' page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate searching with a non existing Product Name", "Validate Search Functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that Bank Transfer option requires all mandatory bank details", "validate affiliate account functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify updating Last Name with valid input", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Change Password page from My Account page", "verify change password functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Update quantity to zero", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate submitting the Contact Form in Contact Us page by not providing any details", "validate contactUs functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple products to cart", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>16</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Wish List from the Product Display page", "Validate product display functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify add-to-wish-list after login redirect", "Validate WishList functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to My Account page using My Account option", "Validate My Account functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify presence of footer section", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify wish list persistence after logout/login", "Validate WishList functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the order listing is shown in descending order by date", "verify order history funcationality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify adding large quantity", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate proper notification messages are displayed for the mandatory fields when you dont provide any data into registration data fields and proceeds", "Validate Register Account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove a product from wish list", "Validate WishList functionality"</td>
+<td></td>
+<td>18</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify wish list link from header", "Validate WishList functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to My Account page on login", "Validate My Account functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Newsletter page by selecting the option using Newsletter Footer option before login", "validate newsLetter functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Register Account functionality in all the supported browsers", "Validate Register Account functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Logout functionality in all the supported environments", "Validate logout account functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify update quantity in cart", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Account Logout page", "Validate logout account functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all the fields in the Register account page have the proper placeholders.", "Validate Register Account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify cart displays correct product details", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Logout option is not displayed under My Account menu before logging in", "Validate logout account functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate correct order status display", "verify order history funcationality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Registering an account by providing an invalid email address into the E-mail field", "Validate Register Account functionality"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify clicking Show All option under each category", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Registering an account when Yes option is selected for Newsletter field", "Validate Register Account functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify search functionality with invalid product name", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the specifications of the Product in the Product Display Page", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify My Account dropdown options", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message format and color", "verify address book functionality"</td>
+<td></td>
+<td>41</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to My Account Information page", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate breadcrumb navigation for Order History page", "verify order history funcationality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation back from order information page to order history page", "verify order history funcationality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify grand total calculation with multiple products", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Home page from any page of the Applcation using Logo", "Validate HomePage functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that more than four products cannot be added to the Product Comparison page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>26</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Home Page using Home icon option of the Breadcrumb in different pages of the Application", "Validate HomePage functionality"</td>
+<td></td>
+<td>1230</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Home page functionality in all the supported environments", "Validate HomePage functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Page URL, Page Heading and Page Title of Contact Us page", "validate contactUs functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search by selecting the category of product", "Validate Search Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Returns link navigation", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>13</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the Products to cart from the Product Comparison page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the prices of the Product when purchased in bulk", "Validate product display functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Product Comparison page when only one product is added to the page for comparison", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Product Compare Page from Search Results page", "Validate Search Functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to navigate to diffrent pages from Login page", "Validate login account functionality"</td>
+<td></td>
+<td>21</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Write a review link under Add to Cart button on the Product Display page", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user can navigate to Affiliate Account page from My Account", "validate affiliate account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Newsletter page by selecting the option using Newsletter Footer option after login", "validate newsLetter functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Registering an account by using the keyboard keys.", "Validate Register Account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Back button functionality", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Cart from Wish List Page", "Validate Add to Cart functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the complete functionality of the Application by selecting  currency", "verify currency functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the order listing is shown in descending order by date", "verify order history funcationality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Page URL, Page Heading and Page Title of the My Account page", "Validate My Account functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the details that are provided while Registering an account that are stored in the database", "Validate Register Account functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add same product multiple times", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that Special Offers link is visible and clickable from homepage", "validate Special offers functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the text entered into the fields in Change Password field is toggled to hide its display", "verify change password functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify wish list access without login", "Validate WishList functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether the fields in the Register account page are according the client requirements (eg: Height, Width, Number of characters, etc)", "Validate Register Account functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Breadcrump in My Account page", "Validate My Account functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Cart from the Products displayed in the Featured section of Home page", "Validate Add to Cart functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Thumbnails of the Product displayed in the Product Display Page", "Validate product display functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product with quantity from product page", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Registering an Account with all details present on registration page", "Validate Register Account functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Product Comparison page when the same product is added twice to the page for comparison", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate searching using Search Criteria field", "Validate Search Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate setting a new default address", "verify address book functionality"</td>
+<td></td>
+<td>22</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Remove a product", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>17</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that valid PayPal Email is accepted", "validate affiliate account functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Password is not visible in Page Source", "Validate login account functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Cart from Search Results Page", "Validate Add to Cart functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate logging into the application without providing anhy credentials", "Validate login account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Write a review link under Add to Cart button on the Product Display page", "Validate product display functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate logging into the application and browsing back using browsing back button", "Validate login account functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate changing the password", "verify change password functionality"</td>
+<td></td>
+<td>12</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Product Compare page when no products are added for comparison", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify successful Affiliate registration with valid details", "validate affiliate account functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Registering account without checking 'Privacy Policy' checkbox option.", "Validate Register Account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login into the application using the valid credentials", "Validate login account functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify updating email with invalid input", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate logging out and loggin in immediately after logout", "Validate logout account functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Search box presence in header", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the breadcrumb, Page Heading, Page Title and Page URLof login Page", "Validate login account functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify clicking logo navigates to Home Page", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product for comparision from Grid View of Search Results page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate breadcrumb navigation", "verify address book functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify removing one product does not affect others", "Validate WishList functionality"</td>
+<td></td>
+<td>14</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all the Password fields in the change password page are marked as mandatory", "verify change password functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Wish List from the Product Display page", "Validate product display functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the description of the Product in the Product Display Page", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Breadcrumb in the change password page", "verify change password functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify mandatory fields marked with star in red", "validate Gift certificate functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify copyright text", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Newsletter page by selecting the option from Right Column options before login", "validate newsLetter functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product for comparision from List View of Search Results page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that submitting empty form displays appropriate validation messages", "validate affiliate account functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate message when no order history is available", "verify order history funcationality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to Cart from the Products displayed in the category or sub-category page", "Validate Add to Cart functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a new Account by opting for Newsletter and check the Newsletter Subscription page", "validate newsLetter functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Product Comparison functionality in all the supported environments", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate cancel operation on edit address", "verify address book functionality"</td>
+<td></td>
+<td>12</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify updating email with valid input", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether the 'Privacy Policy' checkbox option is not selected by default.", "Validate Register Account functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Logout option is not displayed under Right Column options before logging in", "Validate logout account functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that discounted products are listed under Special Offers", "validate Special offers functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate logging into the application using keyboard keys (Tab and Enter)", "Validate login account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Update with invalid characters", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate sorting options on Special Offers page", "validate Special offers functionality"</td>
+<td></td>
+<td>71</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate submitting a review without filling the mandatory fields", "Validate product display functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Prevent duplicate entries in wish list", "Validate WishList functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate User is able to sort the Products displayed in the Search Results", "Validate Search Functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Remove a product", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login into the application using the invalid credentials", "Validate login account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can update Affiliate details after registration", "validate affiliate account functionality"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify new user has empty wish list", "Validate WishList functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to cart from product detail page", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify clicking Cart icon redirects to Shopping Cart page", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the different ways of navigating to the Login Page", "Validate login account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Breadcrumb of Contact Us page", "validate contactUs functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate diffrent ways of navigating to 'Register Account' page", "Validate Register Account functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify product details in wishList", "Validate WishList functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify product total calculation", "Validate Shopping cart functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate entering different password into the Password and Password Confirm fields while Changing the Password", "verify change password functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Home page from any Category Page which dont have any products", "Validate HomePage functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Registering an account when Yes option is selected for Newsletter field", "Validate Register Account functionality"</td>
+<td></td>
+<td>7</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Search page from the Site Map page", "Validate Search Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Page URL, Page Heading and Page Title of Newsletter Subscription page", "validate newsLetter functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Reviews tab when there are no reviews or zero reviews added", "Validate product display functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify current page highlighting on menu", "Verify Header and Footer functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify all required fields are displayed on the page", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all the text fields in the Contact Us page are mandatory", "validate contactUs functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to the Product Display page by using the Product Image in the 'Cart' button toggle box", "Validate product display functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the text into Password field is toggled to hide its visiblity", "Validate login account functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify all mandatory fields validation when left blank", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>8</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product for comparision from Grid View of Product Category or Sub Category page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate deleting an existing address", "verify address book functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to change password page from site map page", "verify change password functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the review text given while writing is accepted according to the specified number of characters", "Validate product display functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate whether the password fields in Register Account page are following Password Complexity Standards", "Validate Register Account functionality"</td>
+<td></td>
+<td>5</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Contact Us page from Footer options", "validate contactUs functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Search functionality in all the supported environments", "Validate Search Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify presence of Add New Address button", "verify address book functionality"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search by selecting the category of product", "Validate Search Functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate editing an existing address", "verify address book functionality"</td>
+<td></td>
+<td>14</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify success message disappears after page refresh", "verify MyAccountInfo-Account information functionality"</td>
+<td></td>
+<td>20</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Product Compare page from Product Category page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+<tr>
+<td title='runners.TestNGRTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGRTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigating to Product Compare page from Search results page", "Validate Product Compare Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestNGRTestRunner@561b6512</td></tr>
+</table><p>
+</body>
+</html>
