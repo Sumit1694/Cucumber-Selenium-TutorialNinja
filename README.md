@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cucumber-Selenium-TutorialNinja
 
 Automation Testing Framework for the **Tutorial Ninja E-Commerce Website** using **Cucumber BDD + Selenium + TestNG + Maven**.  
@@ -274,3 +275,6 @@ reports/
 ---
 
 ⭐ *If you find this project useful, don’t forget to star the repository!*
+=======
+
+>>>>>>> 98564f7395eeed1a8715b2e3f97d0bf2b8c6e1e5
