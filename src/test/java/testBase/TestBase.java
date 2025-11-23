@@ -40,18 +40,18 @@ public class TestBase
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().window().maximize();
 			driver.get(url);
-			}
-		return driver;
 		}
+		return driver;
+	}
 
 	private void loadProperties() throws IOException
 	{
 		if (prop == null)
 		{
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\global.properties");
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\global.properties");
 			prop = new Properties();
 			prop.load(fis);
-			}
 		}
 	}
+}
 
