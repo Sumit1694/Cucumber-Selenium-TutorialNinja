@@ -1,50 +1,36 @@
-2025-11-23 23:42:39 INFO  TestContextSetup:44 - TestContextSetup initiated.
-2025-11-23 23:42:39 INFO  TestContextSetup:29 - ------ Starting Scenario: Validate adding the product to Cart from Product Display Page ------
-2025-11-23 23:42:39 INFO  TestContextSetup:360 - verifying homePage title is displayed!!
-2025-11-23 23:42:39 INFO  TestContextSetup:363 - homePage title is displayed has been verified!!
-2025-11-23 23:42:40 INFO  TestContextSetup:466 - entering text into text box field using existing product name!
-2025-11-23 23:42:40 INFO  TestContextSetup:469 - entered successfully text into text box field using existing product name!
-2025-11-23 23:42:40 INFO  TestContextSetup:473 - clicking on search button!
-2025-11-23 23:42:41 INFO  TestContextSetup:475 - clicked successfully on search icon!
-2025-11-23 23:42:41 INFO  TestContextSetup:135 - Verifying success message: Success: You have added iMac to your shopping cart!
-2025-11-23 23:42:42 INFO  TestContextSetup:60 - ------ Ending Scenario: Validate adding the product to Cart from Product Display Page ------
-2025-11-23 23:42:45 INFO  TestContextSetup:44 - TestContextSetup initiated.
-2025-11-23 23:42:45 INFO  TestContextSetup:29 - ------ Starting Scenario: Validate adding the product to Cart from Wish List Page ------
-2025-11-23 23:42:45 INFO  TestContextSetup:360 - verifying homePage title is displayed!!
-2025-11-23 23:42:45 INFO  TestContextSetup:363 - homePage title is displayed has been verified!!
-2025-11-23 23:42:45 INFO  TestContextSetup:436 - clicking on myAccount link!
-2025-11-23 23:42:46 INFO  TestContextSetup:438 - successfully clicked on myAccount link!
-2025-11-23 23:42:46 INFO  TestContextSetup:494 - clicking on login button!
-2025-11-23 23:42:46 INFO  TestContextSetup:496 - clicked successfully on login button!
-2025-11-23 23:42:46 INFO  TestContextSetup:110 - entering email into email field!
-2025-11-23 23:42:46 INFO  TestContextSetup:112 - successfully entered email into email field!!
-2025-11-23 23:42:46 INFO  TestContextSetup:117 - entering login password into password field!
-2025-11-23 23:42:46 INFO  TestContextSetup:119 - successfully entered password into password field!
-2025-11-23 23:42:46 INFO  TestContextSetup:124 - clicking on login button!
-2025-11-23 23:42:46 INFO  TestContextSetup:126 - successfully clicked on login button!
-2025-11-23 23:42:46 INFO  TestContextSetup:466 - entering text into text box field using existing product name!
-2025-11-23 23:42:48 INFO  TestContextSetup:469 - entered successfully text into text box field using existing product name!
-2025-11-23 23:42:48 INFO  TestContextSetup:473 - clicking on search button!
-2025-11-23 23:42:48 INFO  TestContextSetup:475 - clicked successfully on search icon!
-2025-11-23 23:43:09 ERROR TestContextSetup:53 - Scenario failed: Validate adding the product to Cart from Wish List Page
-2025-11-23 23:43:09 ERROR TestContextSetup:54 - Screenshot saved at: C:\Users\Sumit\eclipse-workspace\NewAccount02092025\cucumber-selenium-tutorialsninja\test-output\screenshots\Validate_adding_the_product_to_Cart_from_Wish_List_Page.png
-2025-11-23 23:43:09 INFO  TestContextSetup:60 - ------ Ending Scenario: Validate adding the product to Cart from Wish List Page ------
-2025-11-23 23:43:12 INFO  TestContextSetup:44 - TestContextSetup initiated.
-2025-11-23 23:43:12 INFO  TestContextSetup:29 - ------ Starting Scenario: Validate adding the product to Cart from Search Results Page ------
-2025-11-23 23:43:12 INFO  TestContextSetup:360 - verifying homePage title is displayed!!
-2025-11-23 23:43:12 INFO  TestContextSetup:363 - homePage title is displayed has been verified!!
-2025-11-23 23:43:12 INFO  TestContextSetup:466 - entering text into text box field using existing product name!
-2025-11-23 23:43:12 INFO  TestContextSetup:469 - entered successfully text into text box field using existing product name!
-2025-11-23 23:43:12 INFO  TestContextSetup:473 - clicking on search button!
-2025-11-23 23:43:12 INFO  TestContextSetup:475 - clicked successfully on search icon!
-2025-11-23 23:43:13 INFO  TestContextSetup:135 - Verifying success message: Success: You have added iMac to your shopping cart!
-2025-11-23 23:43:14 INFO  TestContextSetup:60 - ------ Ending Scenario: Validate adding the product to Cart from Search Results Page ------
-2025-11-23 23:43:17 INFO  TestContextSetup:44 - TestContextSetup initiated.
-2025-11-23 23:43:17 INFO  TestContextSetup:29 - ------ Starting Scenario: Validate adding the product to Cart from the Related Products section of the Product Display Page ------
-2025-11-23 23:43:17 INFO  TestContextSetup:360 - verifying homePage title is displayed!!
-2025-11-23 23:43:17 INFO  TestContextSetup:363 - homePage title is displayed has been verified!!
-2025-11-23 23:43:17 INFO  TestContextSetup:466 - entering text into text box field using existing product name!
-2025-11-23 23:43:18 INFO  TestContextSetup:469 - entered successfully text into text box field using existing product name!
-2025-11-23 23:43:18 INFO  TestContextSetup:473 - clicking on search button!
-2025-11-23 23:43:18 INFO  TestContextSetup:475 - clicked successfully on search icon!
-2025-11-23 23:43:20 INFO  TestContextSetup:135 - Verifying success message: Success: You have added iPhone to your shopping cart!
+2025-12-29 02:05:59 INFO  TestContextSetup:44 - TestContextSetup initiated.
+2025-12-29 02:05:59 INFO  TestContextSetup:29 - ------ Starting Scenario: Validate navigating to Home Page from Shopping Cart page ------
+2025-12-29 02:05:59 INFO  TestContextSetup:360 - verifying homePage title is displayed!!
+2025-12-29 02:05:59 INFO  TestContextSetup:363 - homePage title is displayed has been verified!!
+2025-12-29 02:05:59 INFO  TestContextSetup:466 - entering text into text box field using existing product name!
+2025-12-29 02:05:59 INFO  TestContextSetup:469 - entered successfully text into text box field using existing product name!
+2025-12-29 02:05:59 INFO  TestContextSetup:473 - clicking on search button!
+2025-12-29 02:06:00 INFO  TestContextSetup:475 - clicked successfully on search icon!
+2025-12-29 02:06:00 INFO  TestContextSetup:135 - Verifying success message: Success: Youuu have added iPhone to your shopping cart!
+2025-12-29 02:06:00 ERROR TestContextSetup:53 - Scenario failed: Validate navigating to Home Page from Shopping Cart page
+2025-12-29 02:06:00 ERROR TestContextSetup:54 - Screenshot saved at: D:\sumit\Cucumber-Selenium-TutorialNinja\test-output\screenshots\Validate_navigating_to_Home_Page_from_Shopping_Cart_page.png
+2025-12-29 02:06:00 INFO  TestContextSetup:60 - ------ Ending Scenario: Validate navigating to Home Page from Shopping Cart page ------
+2025-12-29 02:06:03 INFO  TestContextSetup:44 - TestContextSetup initiated.
+2025-12-29 02:06:03 INFO  TestContextSetup:29 - ------ Starting Scenario: Validate navigating to Home Page from Shopping Cart page ------
+2025-12-29 02:06:03 INFO  TestContextSetup:360 - verifying homePage title is displayed!!
+2025-12-29 02:06:03 INFO  TestContextSetup:363 - homePage title is displayed has been verified!!
+2025-12-29 02:06:03 INFO  TestContextSetup:466 - entering text into text box field using existing product name!
+2025-12-29 02:06:03 INFO  TestContextSetup:469 - entered successfully text into text box field using existing product name!
+2025-12-29 02:06:03 INFO  TestContextSetup:473 - clicking on search button!
+2025-12-29 02:06:03 INFO  TestContextSetup:475 - clicked successfully on search icon!
+2025-12-29 02:06:04 INFO  TestContextSetup:135 - Verifying success message: Success: Youuu have added iPhone to your shopping cart!
+2025-12-29 02:06:04 ERROR TestContextSetup:53 - Scenario failed: Validate navigating to Home Page from Shopping Cart page
+2025-12-29 02:06:04 ERROR TestContextSetup:54 - Screenshot saved at: D:\sumit\Cucumber-Selenium-TutorialNinja\test-output\screenshots\Validate_navigating_to_Home_Page_from_Shopping_Cart_page.png
+2025-12-29 02:06:04 INFO  TestContextSetup:60 - ------ Ending Scenario: Validate navigating to Home Page from Shopping Cart page ------
+2025-12-29 02:06:06 INFO  TestContextSetup:44 - TestContextSetup initiated.
+2025-12-29 02:06:06 INFO  TestContextSetup:29 - ------ Starting Scenario: Validate navigating to Home Page from Shopping Cart page ------
+2025-12-29 02:06:06 INFO  TestContextSetup:360 - verifying homePage title is displayed!!
+2025-12-29 02:06:06 INFO  TestContextSetup:363 - homePage title is displayed has been verified!!
+2025-12-29 02:06:06 INFO  TestContextSetup:466 - entering text into text box field using existing product name!
+2025-12-29 02:06:06 INFO  TestContextSetup:469 - entered successfully text into text box field using existing product name!
+2025-12-29 02:06:06 INFO  TestContextSetup:473 - clicking on search button!
+2025-12-29 02:06:07 INFO  TestContextSetup:475 - clicked successfully on search icon!
+2025-12-29 02:06:07 INFO  TestContextSetup:135 - Verifying success message: Success: Youuu have added iPhone to your shopping cart!
+2025-12-29 02:06:07 ERROR TestContextSetup:53 - Scenario failed: Validate navigating to Home Page from Shopping Cart page
+2025-12-29 02:06:07 ERROR TestContextSetup:54 - Screenshot saved at: D:\sumit\Cucumber-Selenium-TutorialNinja\test-output\screenshots\Validate_navigating_to_Home_Page_from_Shopping_Cart_page.png
+2025-12-29 02:06:07 INFO  TestContextSetup:60 - ------ Ending Scenario: Validate navigating to Home Page from Shopping Cart page ------
